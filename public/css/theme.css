@@ -1,0 +1,20 @@
+:root {
+    --nav-width: 60px;
+}
+
+.light {
+    --bg-color: #eee;
+    --bg-light-color: #fff;
+
+    
+    --nav-color: #ccc;
+    --font-color: #111;
+}
+
+.dark {
+    --bg-color: #111;
+    --bg-light-color: #222;
+
+    --nav-color: #000;
+    --font-color: #ccc;
+}
