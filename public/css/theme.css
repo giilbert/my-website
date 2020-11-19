@@ -1,12 +1,17 @@
 :root {
     --nav-width: 60px;
+    
+    --theme-blue: #219ebc;
+    --theme-light-blue: #8ecae6;
+    --theme-dark-blue: #023047;
+    --theme-orange: #fb8500;
+    --theme-yellow: #ffb703;
 }
 
 .light {
     --bg-color: #eee;
     --bg-light-color: #fff;
 
-    
     --nav-color: #ccc;
     --font-color: #111;
 }
@@ -17,4 +22,9 @@
 
     --nav-color: #000;
     --font-color: #ccc;
+}
+
+
+h1, h2, h3, h4, h5, p {
+    color: var(--font-color);
 }

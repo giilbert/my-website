@@ -12,22 +12,35 @@
     color: var(--font-color);
     list-style: none;
     padding: 0;
-    margin: 10px;
+    padding-top: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
 #nav-items li {
-    margin-bottom: 20px;
-    width: 40px;
-    height: 40px;
-} 
+    width: var(--nav-width);
+    height: var(--nav-width);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition-property: background-color;
+    transition-duration: 200ms;
+}
+
+#nav-items li svg {
+    width: calc(var(--nav-width) - 20px);
+    height: calc(var(--nav-width) - 20px);
+    transition-property: color;
+    transition-duration: 200ms;
+}
 
 #nav-items li:hover {
-    width: 44px;
-    height: 44px;
-    position: relative;
-    top: -2px;
+    background-color: var(--theme-blue);
     cursor: pointer;
+}
+
+#nav-items li:last-child {
+    position: fixed;
+    bottom: 0px;
 }
