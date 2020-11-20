@@ -1,6 +1,6 @@
 #navbar {
     background-color: var(--bg-light-color);
-    box-shadow: 4px 0 10px -3px var(--nav-color);
+    box-shadow: 4px 0 1em -3px var(--nav-color);
     width: var(--nav-width);
     height: 100%;
     position: fixed;
@@ -43,4 +43,26 @@
 #nav-items li:last-child {
     position: fixed;
     bottom: 0px;
+}
+
+.tooltip {
+    position: absolute;
+    left: 80px;
+    z-index: 999;
+    display: none;
+    background-color: var(--bg-light-color);
+    border-radius: 4px;
+    text-align: center;
+    font-size: 24px;
+    color: var(--font-color);
+    width: 7em;
+    box-shadow: 4px 0 1em -3px var(--nav-color);
+}
+
+
+/* disable navbars and show a menu when screen width is smaller than 600px */
+@media screen and (max-width: 600px) {
+    #navbar {
+        display: none;
+    }
 }
