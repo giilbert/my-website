@@ -26,3 +26,30 @@ IncludeJS.onload(() => {
         })
     }
 })
+
+
+// light / dark theme switcher 
+let currentTheme = localStorage.getItem('theme'); // true = dark, false = light
+
+// switch to dark if condition in local storage
+window.addEventListener('load', () => {
+    if (currentTheme == 'true') {
+        document.body.classList.remove('light');
+        document.body.classList.add('dark')
+    }
+})
+
+
+let toggleTheme = () => {
+    if (currentTheme == 'true') {
+        document.body.classList.remove('dark');
+        document.body.classList.add('light');
+        currentTheme = 'false';
+    } else if (currentTheme == 'false') {
+        document.body.classList.remove('light');
+        document.body.classList.add('dark');
+        currentTheme = 'true';
+    }
+    // update in local storage
+    localStorage.setItem('theme', currentTheme);
+}

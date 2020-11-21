@@ -6,6 +6,8 @@
     position: fixed;
     left: 0px;
     top: 0px;
+    transition-property: background-color;
+    transition-duration: 100ms;
 }
 
 #nav-items {
@@ -57,6 +59,9 @@
     color: var(--font-color);
     width: 7em;
     box-shadow: 4px 0 1em -3px var(--nav-color);
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
 }
 
 
