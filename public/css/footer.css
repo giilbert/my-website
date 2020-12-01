@@ -1,0 +1,26 @@
+#footer {
+    position: absolute;
+    left: -100px;
+    bottom: -300px;
+    width: calc(100vw - var(--nav-width) - 14px);
+    height: 30px;
+    background-color: var(--bg-light-color);
+    text-align: center;
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+#footer * {
+    color: var(--theme-blue);
+    text-decoration: none;
+}
+
+
+@media only screen and (max-width: 600px) {
+    #footer {
+        left: -20px;
+        width: calc(100vw - 14px); /* adjust for scrollbar */
+    }
+}

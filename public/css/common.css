@@ -9,4 +9,5 @@ body {
     background-color: var(--bg-color);
     margin: 0px;
     padding: 0px;
+    overflow-y: scroll;
 }
