@@ -32,6 +32,7 @@ IncludeJS.onload(() => {
 
 // light / dark theme switcher 
 let currentTheme = localStorage.getItem('theme'); // true = dark, false = light
+if (!currentTheme) currentTheme = 'false';
 
 // switch to dark if condition in local storage
 window.addEventListener('load', () => {
