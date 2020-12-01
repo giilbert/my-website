@@ -14,6 +14,8 @@ let mouseLeave = (e, el) => {
 IncludeJS.onload(() => {
     let nav = document.getElementById('nav-items');
 
+    if (navigator.userAgent.toLowerCase().match(/mobile/i)) return; // no tooltips if on mobile device
+
     for (let i = 0; i < nav.children.length; i++) {
         let el = nav.children[i];
 
