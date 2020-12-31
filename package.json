@@ -1,0 +1,29 @@
+{
+    "name": "my-website",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "dependencies": {
+        "parcel-bundler": "^1.12.4",
+        "react": "^17.0.1",
+        "react-dom": "^17.0.1",
+        "react-router-dom": "^5.2.0"
+    },
+    "devDependencies": {},
+    "scripts": {
+        "start": "parcel serve src/index.html --open",
+        "build": "parcel build src/index.html -d public --no-source-maps",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/giilbert/my-website.git"
+    },
+    "keywords": [],
+    "author": "giilbert",
+    "license": "Apache 2.0",
+    "bugs": {
+        "url": "https://github.com/giilbert/my-website/issues"
+    },
+    "homepage": "https://github.com/giilbert/my-website#readme"
+}

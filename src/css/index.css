@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Inter';
+    src: url(../res/fonts/Inter-Bold.ttf)
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
